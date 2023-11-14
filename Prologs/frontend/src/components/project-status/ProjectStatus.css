@@ -1,0 +1,14 @@
+.project-status{
+    display: flex;
+    justify-content: space-between;
+}
+.project-status-text,
+.project-status-value{
+    margin: 0;
+    font-weight: 400;
+    color: #242731B2;
+}
+.project-status-value{
+    font-weight: 600;
+    color: black
+}

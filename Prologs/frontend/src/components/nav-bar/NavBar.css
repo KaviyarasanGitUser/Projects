@@ -1,0 +1,53 @@
+input[type="text"]{
+    outline: 0;
+    border: 0;
+    padding: 0%;
+    width: 80%;
+    margin: 0;
+}
+img{
+    object-fit: contain;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+.image,
+.search,
+.profile{
+    display: flex;
+}
+.profile{
+    align-items: center;
+}
+
+.search{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 30%;
+    margin: 0.3rem 0;
+}
+.search-icon{
+    margin: auto 0.5rem;
+    font-size: 2rem;
+}
+.notification-icon{
+    font-size: 2.5rem;
+    opacity:70%;
+}
+.profile-icon{
+    font-size: 2.2rem;
+    opacity:70%;
+    margin-left: 1rem;
+}
+
+.logo-text{
+    color: rgb(230, 127, 144);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left:0.5rem;
+    align-items: center;
+    display: flex;
+}

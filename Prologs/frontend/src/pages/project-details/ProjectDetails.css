@@ -1,0 +1,64 @@
+.main-div{
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightgrey;
+    border: 0.5px solid white;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.main-container{
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(244, 246, 247)
+}
+
+.secondary-heading{
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.project-name-container{
+    display: flex;
+}
+.project-progress-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project-progress-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.project-duration-container{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.project-detail-container{
+    display: flex;
+    justify-content: space-between;
+}
+.project-status-container{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 20px lightgrey;
+    border: 0.5px solid white;
+    border-radius: 16px;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.project-requirements-container{
+    width: 68%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

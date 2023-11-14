@@ -1,0 +1,35 @@
+.project-requirement{
+    box-shadow: 0 0 20px lightgrey;
+    border: 0.5px solid white;
+    box-sizing: border-box;
+    width: 49%; 
+    display: flex;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    padding: 2rem;
+}
+.requirement{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.requirement-heading{
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+.requirement-heading-name{
+    margin: 0;
+}
+.requirement-badge{
+    border: 0;
+    width: 3.5rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0.2rem;
+}
+li{
+    margin-bottom: 1rem;
+}
