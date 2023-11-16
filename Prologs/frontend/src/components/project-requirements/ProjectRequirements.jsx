@@ -20,11 +20,13 @@ function ProjectRequirements({ requirement }) {
               {requirement.badge}
             </div>
           </div>
-          <ul>
-            {requirement.text.map((element) => {
-              return <li>{element}</li>;
-            })}
-          </ul>
+          <div className="requirement-list">
+            <ul>
+              {requirement.text.map((element) => {
+                return <li>{element}</li>;
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     </>

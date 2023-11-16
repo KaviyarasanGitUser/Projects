@@ -25,6 +25,12 @@ export const projectRequirements = [
       "Code optimisation",
       "Payment option integration",
       "Payu sdk integration",
+      "Code optimisation",
+      "Payment option integration",
+      "Payu sdk integration",
+      "Code optimisation",
+      "Payment option integration",
+      "Payu sdk integration",
     ],
   },
   {
@@ -32,9 +38,6 @@ export const projectRequirements = [
     backgroundColor: "#D9E1E7",
     color: "#242731",
     badge: "12",
-    text: [
-      "Scope of reinforcement learning in whatsapp chat",
-      "chat screen",
-    ],
+    text: ["Scope of reinforcement learning in whatsapp chat", "chat screen"],
   },
 ];

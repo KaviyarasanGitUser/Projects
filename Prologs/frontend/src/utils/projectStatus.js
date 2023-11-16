@@ -39,5 +39,12 @@ export const projectStatus = [
     statusTitle: "Weekly Communication",
     statusValue: "28%",
   },
-  
+  {
+    statusTitle: "Unit Testing",
+    statusValue: "13%",
+  },
+  {
+    statusTitle: "Weekly Communication",
+    statusValue: "28%",
+  },
 ];

@@ -5,8 +5,8 @@
     height: 1rem;
     display: flex;
     justify-content: space-between;
-    height: 6.75rem;
-    width: 20rem;
+    height: 100%;
+    width: 18%;
 }
 
 .progress-icon-div{

@@ -2,7 +2,7 @@
     box-shadow: 0 0 20px lightgrey;
     border: 0.5px solid white;
     box-sizing: border-box;
-    width: 49%; 
+    width: 49%;
     display: flex;
     margin-bottom: 2rem;
     border-radius: 16px;
@@ -20,6 +20,11 @@
 }
 .requirement-heading-name{
     margin: 0;
+}
+.requirement-list{
+    /* border: 1px solid black; */
+    height: 8rem;
+    overflow: auto;
 }
 .requirement-badge{
     border: 0;

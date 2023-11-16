@@ -1,0 +1,74 @@
+.create-new-project{
+    width: 70%;
+    border: 1px solid blue;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+}
+.new-project-form{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.new-project-heading{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logo-div{
+    border: 1px solid #BDBDBD;
+    display: grid;
+    place-items: center;
+    width: 5rem;
+    padding: 2% 4%;
+    border-radius: 12px;
+    border-style: dotted;
+}
+.add-logo-div{
+    border: 1px solid #2F80ED;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    display: grid;
+    place-items: center;
+    color: #2F80ED;
+    font-size: 2rem; 
+}
+.add-logo-text{
+    color: #24273180
+}
+input[type='file']{
+    display: none;
+}
+.input-container{
+    display: flex;
+}
+.overall-detail-container{
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+}
+.form-heading{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.single-input-container{
+    margin-top: 1rem;
+    width: 50%;
+}
+.form-label{
+    color: #242731;
+    font-weight: 500;
+}
+.form-input{
+    margin-top: 1rem;
+    display: block;
+    display: flex;
+    border: 1px solid #B1B5C3;
+    border-radius: 10px;
+    width: 90%;
+    padding: 4%;
+}

@@ -1,0 +1,24 @@
+.home-project-menu{
+    border: 0.5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightgrey;
+    width: 22%;
+    margin: 2rem 0;
+    display: grid;
+    height: 200px;
+    place-items: center;
+}
+.home-project-status{
+    font-weight: 500;
+}
+.home-project-count{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.home-icon{
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+}

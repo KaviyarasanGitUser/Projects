@@ -5,9 +5,8 @@ function ProjectName({ projectDetail }) {
   return (
     <div className="project-name-div">
       <div className="project-name">
-        <span className="project-text">
-          <p>{projectDetail.projectName}</p>
-        </span>
+        <p className="project-text">{projectDetail.projectName}</p>
+
         <img className="project-icon" src={projectDetail.projectLogo} />
         <p
           className="project-detail-badge primary-badge"

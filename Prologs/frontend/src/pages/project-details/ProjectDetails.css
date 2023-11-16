@@ -30,6 +30,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.slider{
+    border-radius: 10px;
+}
 .project-progress-div{
     width: 100%;
     display: flex;
@@ -46,6 +49,7 @@
 }
 .project-status-container{
     width: 25%;
+    height: 30rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -54,10 +58,12 @@
     border-radius: 16px;
     gap: 2rem;
     padding: 2rem;
+    overflow: auto;
 }
 
 .project-requirements-container{
     width: 68%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
