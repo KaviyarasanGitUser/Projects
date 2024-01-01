@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import NavBar from "../../components/nav-bar/NavBar";
 import ProjectMenu from "../../components/project-menu/ProjectMenu";
@@ -6,12 +6,22 @@ import ProjectDetail from "../../components/project-detail/ProjectDetail";
 import CreateNewProject from "../../components/create-new-project/CreateNewProject";
 
 function Home() {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const formOpen = () => {
+    setIsFormOpen(!isFormOpen);
+  };
   return (
     <>
-      <div className="create-new-project-container">
-        <CreateNewProject />
-      </div>
-      <div className="home-container">
+      {isFormOpen ? <div
+        className="create-new-project-container"
+        style={{
+          opacity: isFormOpen ? "1" : "0",
+          zIndex: isFormOpen ? "1" : "-1",
+        }}
+      >
+        <CreateNewProject isFormOpen={formOpen} />
+      </div> : <></> }
+      <div className= {`home-container ${isFormOpen ? 'brightness' : ''}`}>
         <div className="nav-bar-container">
           <NavBar />
         </div>
@@ -20,7 +30,7 @@ function Home() {
             <ProjectMenu />
           </div>
           <div className="home-project-detail-container">
-            <ProjectDetail />
+            <ProjectDetail isFormOpen={formOpen} />
           </div>
         </div>
       </div>

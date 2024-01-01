@@ -4,7 +4,10 @@ import { RiEqualizerLine } from "react-icons/ri";
 import ProjectDetailCard from "../project-detail-card/ProjectDetailCard";
 import { projectDetailData } from "../../utils/projectDetails";
 
-function ProjectDetail() {
+function ProjectDetail({ isFormOpen }) {
+  const handleCreateNew = () => {
+    isFormOpen();
+  };
   return (
     <>
       <div className="project-detail-header">
@@ -16,7 +19,12 @@ function ProjectDetail() {
             Filter
             <RiEqualizerLine className="filter-icon" />
           </button>
-          <button className="project-detail-button create">+ Create New</button>
+          <button
+            className="project-detail-button create"
+            onClick={handleCreateNew}
+          >
+            + Create New
+          </button>
         </div>
       </div>
       <div className="home-project-detail">

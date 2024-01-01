@@ -33,7 +33,7 @@
 }
 .home-slider{
     width: 80%;
-    margin: auto;
+    /* margin: auto; */
 }
 input[type="range"]::-webkit-slider-thumb{
     -webkit-appearance: none;
@@ -49,6 +49,8 @@ input[type="range"]::-webkit-slider-thumb{
 .home-project-name{
     font-weight: 500;
     margin: 1.2rem 0.5rem;
+    background-color: inherit;
+    border: 0;
 }
 .home-logo-div{
     display: flex;
@@ -56,10 +58,11 @@ input[type="range"]::-webkit-slider-thumb{
 }
 .home-badge-div{
     display: flex;
+    width: 50%;
+    justify-content: space-between;
 }
 
 .home-project-detail-badge{
-    margin-right: 0.5rem;
     border-radius: 5px;
     padding: 0.3rem;
 }
@@ -87,4 +90,10 @@ input[type="range"]::-webkit-slider-thumb{
 }
 .stats-value{
     margin: 0.5rem 0;
+}
+.progress-div{
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

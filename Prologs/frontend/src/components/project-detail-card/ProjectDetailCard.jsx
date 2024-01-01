@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./ProjectDetailCard.css";
 import { CiViewList } from "react-icons/ci";
 import { IoBugOutline } from "react-icons/io5";
@@ -6,13 +7,19 @@ import { BsCodeSlash } from "react-icons/bs";
 import { GoChecklist } from "react-icons/go";
 
 const ProjectDetailCard = ({ projectDetail }) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/project");
+  };
   return (
     <div className="home-project-detail-card">
       <div className="home-project-detail-div">
         <div className="home-project-logo">
           <div className="home-logo-div">
             <img className="home-project-icon" src={projectDetail.logo} />
-            <p className="home-project-name">{projectDetail.logoName}</p>
+            <button className="home-project-name" onClick={handleClick}>
+              {projectDetail.logoName}
+            </button>
           </div>
           <div className="home-badge-div">
             <p
@@ -31,13 +38,15 @@ const ProjectDetailCard = ({ projectDetail }) => {
         </div>
         <div className="home-project-progress">
           <p className="home-progress-text">{projectDetail.duration}</p>
-          <progress
-            className="home-slider"
-            min={0}
-            max={100}
-            value={projectDetail.progress}
-          ></progress>
-          <p style={{ display: "inline" }}>{projectDetail.progress}%</p>
+          <div className="progress-div">
+            <progress
+              className="home-slider"
+              min={0}
+              max={100}
+              value={projectDetail.progress}
+            ></progress>
+            <p>{projectDetail.progress}%</p>
+          </div>
           <p className="home-progress-text">{projectDetail.remainingDays}</p>
         </div>
         <div className="project-stats">

@@ -22,6 +22,10 @@
     background-color: dodgerblue;
     color: white;
 }
+.create:hover{
+    color: dodgerblue;
+    background-color: white;
+}
 .filter{
     display: flex;
     color: dodgerblue;

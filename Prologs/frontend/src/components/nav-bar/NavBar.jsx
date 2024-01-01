@@ -7,7 +7,7 @@ import { CgProfile } from "react-icons/cg";
 
 function NavBar() {
   return (
-    <div className="nav-bar">
+    <div className="nav-bar" >
       <div className="image">
         <img src={prologLogo} />
         <span className="logo-text">
@@ -17,7 +17,7 @@ function NavBar() {
       <div className="search">
         <i className="fas fa-search"></i>
         <CiSearch className="search-icon" />
-        <input type="text" placeholder="Search or type" />
+        <input  className="nav-bar-input" type="text" placeholder="Search or type" />
       </div>
       <div className="profile">
         <IoMdNotificationsOutline className="notification-icon" />
